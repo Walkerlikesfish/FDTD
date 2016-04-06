@@ -190,6 +190,10 @@ for n=1:1:time_tot
     set(gca,'FontSize',20);
     %getframe(handles.axes1);
     drawnow
+    if get(handles.toggle_pause,'Value')==1
+    else
+       uiwait
+    end
 end
 
 
